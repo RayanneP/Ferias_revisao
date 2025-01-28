@@ -1,0 +1,176 @@
+/* Reset básico aprimorado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url(https://img.freepik.com/fotos-premium/design-de-banner-de-verao-com-fundo-de-ferias_826454-1294.jpg);
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para centralizar o título "Férias" */
+.titulo-centralizado {
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    text-align: center;
+}
+
+.titulo-centralizado h1 {
+    font-size: 1.5rem; /* Tamanho grande para destacar */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.116);
+}
+/* Estilo para o cabeçalho */
+header.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F2CD13; 
+    padding: 20px 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header.menu nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header.menu nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.2s;
+}
+
+header.menu nav ul li a:hover {
+    color: #ccd0ff;
+    transform: scale(1.1);
+}
+
+/* Estilo para a seção inicial */
+section.flex {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    padding: 0 50px;
+    gap: 30px;
+    max-width: 1200px;
+}
+
+section.flex div {
+    text-align: center;
+    flex: 1;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section.flex div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+section.flex img {
+    width: 100%;
+    max-width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+section.flex p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #000000;
+}
+
+/* Estilo para os blocos principais */
+.content {
+    margin: 80px auto;
+    max-width: 1000px;
+    padding: 0 50px;
+}
+
+.content section {
+    margin-bottom: 60px;
+}
+
+.content section h1 {
+    font-size: 2rem;
+    color: #004d05; 
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content section img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.content section p {
+    font-size: 1rem;
+    color: #030c2e;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+section p {
+    background-color: rgba(255, 255, 255, 0.819); /* Fundo semitransparente */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    color: #fff; /* Cor do texto branca para contraste */
+    line-height: 1.6; /* Melhor espaçamento entre linhas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Botão para navegação interna (opcional) */
+.content section a {
+    display: inline-block;
+    background: #5343ff; 
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.content section a:hover {
+    background: #6586ff; 
+    transform: translateY(-3px);
+}
+
+/* Rodapé opcional */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #5343ff; 
+    color: white;
+    margin-top: 50px;
+}
+   /* Ajusta o rodapé para dispositivos móveis */
+   footer {
+    padding-top: 50px; /* Reduz o espaçamento superior */
+}
